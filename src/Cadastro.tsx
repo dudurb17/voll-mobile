@@ -13,11 +13,11 @@ import { TouchableOpacity } from "react-native";
 import { Titulo } from "./components/Titulo";
 import { EntradaTexto } from "./components/EntradaTexto";
 
-export default function Login() {
+export default function Cadastro() {
   return (
     <VStack flex={1} alignItems={"center"} justifyContent={"center"} p={5}>
       <Image source={Logo} alt="Logo Voll" />
-      <Titulo>Faça seu login em sua conta</Titulo>
+      <Titulo>Cadastro</Titulo>
       <Box>
         <EntradaTexto
           label={"Email"}
