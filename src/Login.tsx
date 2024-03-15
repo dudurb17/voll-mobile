@@ -10,14 +10,13 @@ import {
 } from "native-base";
 import Logo from "./assets/Logo.png";
 import { TouchableOpacity } from "react-native";
+import { Titulo } from "./components/Titulo";
 
 export default function Login() {
   return (
     <VStack flex={1} alignItems={"center"} justifyContent={"center"} p={5}>
       <Image source={Logo} alt="Logo Voll" />
-      <Text fontSize="2xl" color={"gray.500"} textAlign={"center"} mt={5} bold>
-        Faça login em sua conta
-      </Text>
+      <Titulo>Faça seu login em sua conta</Titulo>
       <Box>
         <FormControl mt={3}>
           <FormControl.Label>E-mail</FormControl.Label>
@@ -43,9 +42,11 @@ export default function Login() {
       <Button w={"100%"} bg={"blue.800"} mt={10} borderRadius="lg">
         Entrar
       </Button>
-      <Link href="">Esqueceu sua senha?</Link>
+      <Link href="" mt={2}>
+        Esqueceu sua senha?
+      </Link>
 
-      <Box w={"100%"} flexDirection={"row"} justifyContent={"center"} mt={10}>
+      <Box w={"100%"} flexDirection={"row"} justifyContent={"center"} mt={8}>
         <Text>Ainda não tem cadastro? </Text>
         <TouchableOpacity>
           <Text color="blue.500">Faça seu cadastro</Text>
