@@ -12,6 +12,7 @@ import Logo from "./assets/Logo.png";
 import { TouchableOpacity } from "react-native";
 import { Titulo } from "./components/Titulo";
 import { EntradaTexto } from "./components/EntradaTexto";
+import { Botao } from "./components/Botao";
 
 export default function Login() {
   return (
@@ -25,9 +26,7 @@ export default function Login() {
         />
         <EntradaTexto label={"Senha"} placeholder={"Insira sua senha"} />
       </Box>
-      <Button w={"100%"} bg={"blue.800"} mt={10} borderRadius="lg">
-        Entrar
-      </Button>
+      <Botao>Entrar</Botao>
       <Link href="" mt={2}>
         Esqueceu sua senha?
       </Link>
