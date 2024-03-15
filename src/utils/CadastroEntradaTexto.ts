@@ -13,6 +13,16 @@ const secoes = [
           label: "Email",
           placeholder: "Digite seu e-mail",
         },
+        {
+            id: 3,
+            label: "Crie uma senha",
+            placeholder: "Insira sua senha",
+          },
+          {
+            id: 4,
+            label: "Confirme sua senha",
+            placeholder: "Insira sua senha",
+          },
       ],
       checkbox: [],
     },
