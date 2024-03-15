@@ -1,15 +1,5 @@
-import {
-  VStack,
-  Image,
-  Text,
-  Box,
-  FormControl,
-  Input,
-  Button,
-  Link,
-} from "native-base";
+import { VStack, Image, Box } from "native-base";
 import Logo from "./assets/Logo.png";
-import { TouchableOpacity } from "react-native";
 import { Titulo } from "./components/Titulo";
 import { EntradaTexto } from "./components/EntradaTexto";
 import { Botao } from "./components/Botao";
@@ -48,7 +38,14 @@ export default function Cadastro() {
   ];
 
   function avancarSecao() {
-    setNumSecao(numSecao + 1);
+    if (numSecao < secoes.length - 1) {
+      setNumSecao(numSecao + 1);
+    }
+  }
+  function voltarSecao() {
+    if (numSecao > 0) {
+      setNumSecao(numSecao - 1);
+    }
   }
 
   return (
@@ -66,7 +63,14 @@ export default function Cadastro() {
           );
         })}
       </Box>
-      <Botao onPress={() => avancarSecao()}>Avançar</Botao>
+      {numSecao > 0 && (
+        <Botao onPress={() => voltarSecao()} bgColor={"gray.400"}>
+          voltar
+        </Botao>
+      )}
+      <Botao onPress={() => avancarSecao()} mt={4}>
+        Avançar
+      </Botao>
     </VStack>
   );
 }
