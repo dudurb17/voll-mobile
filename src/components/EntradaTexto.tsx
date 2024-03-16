@@ -1,12 +1,12 @@
 import { FormControl, ITextProps, Input } from "native-base";
 import { ReactNode } from "react";
 
-interface Props {
-  label: string;
+interface Props extends ITextProps {
+  label?: string;
   placeholder: string;
 }
 
-export function EntradaTexto({ label, placeholder }: Props) {
+export function EntradaTexto({ label, placeholder, ...rest }: Props) {
   return (
     <FormControl mt={3}>
       <FormControl.Label>{label}</FormControl.Label>
@@ -16,6 +16,7 @@ export function EntradaTexto({ label, placeholder }: Props) {
         w="100%"
         bg={"gray.100"}
         shadow={3}
+        {...rest}
       />
     </FormControl>
   );
