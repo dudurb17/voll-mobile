@@ -21,12 +21,11 @@ const CardConsulta = ({
 }: Props) => {
   return (
     <VStack
-      w="100%"
+      shadow={"2"}
       bg={foiAtendido ? "blue.100" : "white"}
-      p={5}
       borderRadius={"lg"}
-      shadow={2}
-      mb={5}
+      m={1}
+      p={2}
     >
       <VStack flexDirection={"row"}>
         <Avatar

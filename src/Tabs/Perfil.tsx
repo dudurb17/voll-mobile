@@ -18,14 +18,14 @@ const Perfil = () => {
         <Titulo fontSize="lg" mb={1}>
           Eduardo Bedin
         </Titulo>
-        <Text>24/01/2005</Text>
-        <Text>Santa Catarina</Text>
+        <Text color={"gray.300"}>24/01/2005</Text>
+        <Text color={"gray.300"}>Santa Catarina</Text>
         <Divider />
         <Titulo color={"blue.500"} mb={1}>
           Histórico médico
         </Titulo>
-        <Text>Bronquite</Text>
-        <Text>Sinusite</Text>
+        <Text>{"\u2022"}Bronquite</Text>
+        <Text>{"\u2022"}Sinusite</Text>
       </VStack>
     </ScrollView>
   );
