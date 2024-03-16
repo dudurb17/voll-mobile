@@ -26,6 +26,7 @@ const CardConsulta = ({
       p={5}
       borderRadius={"lg"}
       shadow={2}
+      mb={5}
     >
       <VStack flexDirection={"row"}>
         <Avatar
@@ -42,9 +43,7 @@ const CardConsulta = ({
           <Text>{data}</Text>
         </VStack>
       </VStack>
-      <Botao mt={4}>
-        {foiAfendado ? "Cancelar consulta" : "Agendar consulta"}
-      </Botao>
+      <Botao mt={4}>{foiAfendado ? "Cancelar" : "Agendar consulta"}</Botao>
     </VStack>
   );
 };
