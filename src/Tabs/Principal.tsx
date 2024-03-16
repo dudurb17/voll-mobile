@@ -22,7 +22,9 @@ const Principal = () => {
           Boas-vindas!
         </Titulo>
         <CardInput />
-        <Titulo color={"blue.800"}>Depoimentos</Titulo>
+        <Titulo color={"blue.800"} mb={5}>
+          Depoimentos
+        </Titulo>
         {depoimentos.map((item) => {
           return (
             <Box key={item.id}>
@@ -30,7 +32,7 @@ const Principal = () => {
               <Titulo fontSize={16} mt={2}>
                 {item.local}
               </Titulo>
-              <Divider mb={2} />
+              <Divider />
             </Box>
           );
         })}

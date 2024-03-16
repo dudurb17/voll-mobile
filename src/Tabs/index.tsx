@@ -24,15 +24,16 @@ const tabs = [
     icon: "home",
   },
   {
-    name: "Explorar",
-    component: Explorar,
+    name: "Consultas",
+    component: Consultas,
     icon: "calendar",
   },
   {
-    name: "Consultas",
-    component: Consultas,
+    name: "Explorar",
+    component: Explorar,
     icon: "search",
   },
+
   {
     name: "Perfil",
     component: Perfil,
